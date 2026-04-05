@@ -726,6 +726,19 @@ export default function PropertyDetail() {
               </div>
             </section>
 
+            {propertyData.pdfUrl && (
+              <section className="space-y-8">
+                <h2 className="text-2xl font-bold text-marromescuro">Catálogo / Planta</h2>
+                <div className="w-full aspect-[4/3] md:aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl border border-marromescuro/5 bg-marromescuro/5">
+                  <iframe 
+                    src={`${propertyData.pdfUrl}#toolbar=0`} 
+                    className="w-full h-full"
+                    title="PDF Viewer"
+                  />
+                </div>
+              </section>
+            )}
+
             <section className="space-y-8">
               <h2 className="text-2xl font-bold text-marromescuro">Localização</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">

@@ -460,10 +460,10 @@ export default function BrokerDashboard() {
               </div>
 
               <form onSubmit={handleSaveProperty} className="flex-1 overflow-y-auto p-8 space-y-8">
-                {/* Basic Info */}
+                {/* Basic Info & Characteristics */}
                 <div className="space-y-6">
                   <h4 className="text-sm font-black text-[#8FA603] uppercase tracking-widest flex items-center gap-2">
-                    <Info className="w-4 h-4" /> Informações Básicas
+                    <Info className="w-4 h-4" /> Informações Básicas e Características
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
@@ -503,14 +503,8 @@ export default function BrokerDashboard() {
                       </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Characteristics */}
-                <div className="space-y-6">
-                  <h4 className="text-sm font-black text-[#8FA603] uppercase tracking-widest flex items-center gap-2">
-                    <Maximize className="w-4 h-4" /> Características
-                  </h4>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-2">
                     <div className="space-y-2">
                       <label className="text-xs font-bold text-gray-500 uppercase ml-1 flex items-center gap-1"><Bed className="w-3 h-3" /> Suítes</label>
                       <input 
